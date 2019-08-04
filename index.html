@@ -19,40 +19,48 @@
             <section class="main-budget-wrapper">
                 <div class="sub-budget-wrapper">
                     <div class="button-wrapper">
-                        <button class="add-income" id="incomeButton">Add Income</button>
-                        <button class="add-expense" id="expenseButton">Add Expenses</button>
+                        <button class="add-income btn" id="incomeButton">Add Income</button>
+                        <button class="add-expense btn" id="expenseButton">Add Expenses</button>
                     </div>
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Enter Description">
-                        <input type="number" placeholder="Enter Amount">
+                        <input type="text" placeholder="Enter Description" class="input-desc">
+                        <input type="number" placeholder="Amount" class="input-value">
                     </div>
-                    <button class="submit">Submit Amount</button>
+                    <button class="submit btn">Submit Amount</button>
                 </div>
             </section>
             <section class="main-budget-wrapper">
-                <p>Available Cash in August 2019</p>
-                <div class="available-cash">₹25,000</div>
-                <div class="summery-wrapper">
-                    <b>Total Income</b> <span>₹50,000</span>
-                    <b>Total Expenses</b> <span>₹25,000</span>
+                <div class="main-summery-wrapper">
+                    <p class="month">Available Cash in August 2019</p>
+                    <div class="available-cash">₹25,000</div>
+                    <div class="summery-wrapper">
+                        <div>
+                            <b>Total Income</b> <span>₹50,000</span>
+                        </div>
+                        <div>
+                            <b>Total Expenses</b> <span>₹25,000</span>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="main-details">
-                <div>
+                <hr>
+                <div class="item-head">
                     <h4>Income</h4>
                     <h4>Amount</h4>
                 </div>
-                <div>
+                <div class="item">
                     <div class="item-description">Salary</div>
                     <div class="item-value">40,000</div>
                 </div>
             </section>
             <section class="main-details">
+                <hr>
                 <div>
                     <h4>Expenses</h4>
                     <h4>Amount</h4>
                 </div>
-                <div>
+                <div class="item">
                     <div class="item-description">Shopping</div>
                     <div class="item-value">6000</div>
                 </div>
