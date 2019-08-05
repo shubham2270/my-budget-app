@@ -16,53 +16,66 @@
             My Budget App
         </header>
         <main>
+            <!-- Add Income and expenses -->
             <section class="main-budget-wrapper">
                 <div class="sub-budget-wrapper">
                     <div class="button-wrapper">
-                        <button class="add-income btn" id="incomeButton">Add Income</button>
-                        <button class="add-expense btn" id="expenseButton">Add Expenses</button>
+                        <button class="add-income btn" id="incomeButton" value="add">Add Income</button>
+                        <button class="add-expense btn" id="expenseButton" value="subtract">Add Expenses</button>
                     </div>
                     <div class="input-wrapper">
-                        <input type="text" placeholder="Enter Description" class="input-desc">
-                        <input type="number" placeholder="Amount" class="input-value">
+                        <input type="text" placeholder="Enter Description" class="input-desc" id="itemName">
+                        <input type="number" placeholder="Amount" class="input-value" id="amount">
                     </div>
-                    <button class="submit btn">Submit Amount</button>
+                    <button class="submit btn" id="submit">Submit Amount</button>
                 </div>
             </section>
+            <!-- Display Income and expenses -->
             <section class="main-budget-wrapper">
                 <div class="main-summery-wrapper">
                     <p class="month">Available Cash in August 2019</p>
-                    <div class="available-cash">₹25,000</div>
+                    <div class="available-cash" id="balanceCash">₹25,000</div>
                     <div class="summery-wrapper">
                         <div>
-                            <b>Total Income</b> <span>₹50,000</span>
+                            <b>Total Income</b> <span id="totalIncome">₹50,000</span>
                         </div>
                         <div>
-                            <b>Total Expenses</b> <span>₹25,000</span>
+                            <b>Total Expenses</b> <span id="totalExpense">₹25,000</span>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Expense and Income Details -->
             <section class="main-details">
                 <hr>
                 <div class="item-head">
                     <h4>Income</h4>
                     <h4>Amount</h4>
                 </div>
-                <div class="item">
-                    <div class="item-description">Salary</div>
-                    <div class="item-value">40,000</div>
+                <div class="item-wrapper" id="IncomeItemWrapper">
+                    <div class="item">
+                        <div class="item-description">Salary</div>
+                        <div class="item-value incomeValue">40,000</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-description">Salary</div>
+                        <div class="item-value incomeValue">40,000</div>
+                    </div>
                 </div>
             </section>
+            <!-- Expense Item and value -->
             <section class="main-details">
                 <hr>
-                <div>
+                <div class="item-head">
                     <h4>Expenses</h4>
                     <h4>Amount</h4>
                 </div>
-                <div class="item">
-                    <div class="item-description">Shopping</div>
-                    <div class="item-value">6000</div>
+                <div class="item-wrapper" id="ExpenseItemWrapper">
+                    <div class="item">
+                        <div class="item-description">Shopping</div>
+                        <div class="item-value">6000</div>
+                    </div>
                 </div>
             </section>
         </main>

@@ -112,7 +112,7 @@ input {
     color: #292929;
 }
 
-.main-details div {
+.item-head {
     display: flex;
     justify-content: space-around;
 }
@@ -171,7 +171,17 @@ hr {
 }
 
 .item {
+    display: flex;
+    justify-content: space-around;
     background-color: pink;
     padding: 10px;
     margin: 5px;
+    width: 100%;
+}
+
+.item-wrapper {
+    display: block;
+    align-items: flex-start;
+    height: 100%;
+    grid-template-columns: 1fr;
 }
